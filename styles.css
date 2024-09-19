@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    width: 360px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.google-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #202124;
+}
+
+.subheading {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #5f6368;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #1a73e8;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1766cc;
+}
+
+.help-links {
+    margin: 15px 0;
+}
+
+.help-links a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.other-options {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 15px;
+}
+
+.other-options a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.create-account a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
